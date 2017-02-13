@@ -26,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E7FB9341E5208E5002C60B8 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		1EA742B21E4B68BB0045A813 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA742C01E4B692C0045A813 /* StructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StructureController.cpp; path = Controller/StructureController.cpp; sourceTree = "<group>"; };
 		1EA742C11E4B692C0045A813 /* StructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StructureController.hpp; path = Controller/StructureController.hpp; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 				1EA742C61E4B6AC80045A813 /* IntNode.hpp */,
 				1EA742C91E4B72530045A813 /* IntNodeArray.cpp */,
 				1EA742CA1E4B72530045A813 /* IntNodeArray.hpp */,
+				1E7FB9341E5208E5002C60B8 /* Node.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -280,6 +282,7 @@
 				1EA742BB1E4B68BB0045A813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

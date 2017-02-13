@@ -20,7 +20,7 @@ public:
     IntNodeArray(int bigness);
     int getSize();
     int getFromIndex(int index);
-    void setAtIndex(int index, value int);
+    void setAtIndex(int index, int value);
 };
 
 #endif /* IntNodeArray_hpp */

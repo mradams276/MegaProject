@@ -8,6 +8,7 @@
 
 #include "StructureController.hpp"
 
+
 int main()
 {
     StructureController * app = new StructureController();
