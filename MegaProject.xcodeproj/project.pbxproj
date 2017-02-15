@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E409EE51E54B258007AD026 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E409EE31E54B258007AD026 /* Timer.cpp */; };
 		1EA742C21E4B692C0045A813 /* StructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C01E4B692C0045A813 /* StructureController.cpp */; };
 		1EA742C41E4B69440045A813 /* StructureRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C31E4B69440045A813 /* StructureRunner.cpp */; };
 		1EA742C71E4B6AC80045A813 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C51E4B6AC80045A813 /* IntNode.cpp */; };
@@ -26,6 +27,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E409EE21E54AD84007AD026 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
+		1E409EE31E54B258007AD026 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
+		1E409EE41E54B258007AD026 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 		1E7FB9341E5208E5002C60B8 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		1EA742B21E4B68BB0045A813 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA742C01E4B692C0045A813 /* StructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StructureController.cpp; path = Controller/StructureController.cpp; sourceTree = "<group>"; };
@@ -48,6 +52,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E409EE61E54B2C0007AD026 /* Typed Data Samples */ = {
+			isa = PBXGroup;
+			children = (
+				1EA742CA1E4B72530045A813 /* IntNodeArray.hpp */,
+				1EA742C51E4B6AC80045A813 /* IntNode.cpp */,
+				1EA742C61E4B6AC80045A813 /* IntNode.hpp */,
+				1EA742C91E4B72530045A813 /* IntNodeArray.cpp */,
+			);
+			name = "Typed Data Samples";
+			sourceTree = "<group>";
+		};
 		1EA742A91E4B68BA0045A813 = {
 			isa = PBXGroup;
 			children = (
@@ -86,10 +101,10 @@
 		1EA742C81E4B6AD30045A813 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1EA742C51E4B6AC80045A813 /* IntNode.cpp */,
-				1EA742C61E4B6AC80045A813 /* IntNode.hpp */,
-				1EA742C91E4B72530045A813 /* IntNodeArray.cpp */,
-				1EA742CA1E4B72530045A813 /* IntNodeArray.hpp */,
+				1E409EE61E54B2C0007AD026 /* Typed Data Samples */,
+				1E409EE31E54B258007AD026 /* Timer.cpp */,
+				1E409EE41E54B258007AD026 /* Timer.hpp */,
+				1E409EE21E54AD84007AD026 /* Array.hpp */,
 				1E7FB9341E5208E5002C60B8 /* Node.hpp */,
 			);
 			name = Model;
@@ -155,6 +170,7 @@
 				1EA742C71E4B6AC80045A813 /* IntNode.cpp in Sources */,
 				1EA742CB1E4B72530045A813 /* IntNodeArray.cpp in Sources */,
 				1EA742C21E4B692C0045A813 /* StructureController.cpp in Sources */,
+				1E409EE51E54B258007AD026 /* Timer.cpp in Sources */,
 				1EA742C41E4B69440045A813 /* StructureRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

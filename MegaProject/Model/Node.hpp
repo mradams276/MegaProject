@@ -32,21 +32,21 @@ Implementation section of the template class goes here
 */
 
 template <class Type>
-Node<Type> :: Node<Type>()
+Node<Type> :: Node()
 {
     nodePointer = nullptr;
     //Not initializing node data because I dun know the type
 }
 
 template <class Type>
-Node<Type> :: Node<Type>(Type data)
+Node<Type> :: Node(Type data)
 {
     this->nodeData = data;
     this->nodePointer = nullptr;
 }
 
 template <class Type>
-Node<Type> :: Node<Type>(Type value, Node<Type> * nextNode)
+Node<Type> :: Node(Type value, Node<Type> * nextNode)
 {
     this->nodeData = value;
     this->nodePointer = nextNode;
@@ -55,7 +55,7 @@ Node<Type> :: Node<Type>(Type value, Node<Type> * nextNode)
 template <class type>
 Type Node<Type> :: getNodeData()
 {
-    return noData;
+    return nodeData;
 }
 
 template <class Type>
