@@ -9,8 +9,9 @@
 #ifndef Array_h
 #define Array_h
 
-#indluce ".hpp"
+#include ".hpp"
 #include "Node.hpp"
+#include <iostream>
 
 template <class Type>
 class Array
@@ -28,7 +29,7 @@ public:
     //Copy Constructor
     Array<Type>(const Array<Type> & toBeCopied);
     //Assignment Operator Overload
-    void operator = (const Array<Type> & toBeAssigned);
+    //void operator = (const Array<Type> & toBeAssigned);
     
     
     //Methods

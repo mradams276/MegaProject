@@ -40,6 +40,7 @@
 		1EA742C91E4B72530045A813 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		1EA742CA1E4B72530045A813 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		1ECBE7B81E5C8E1E0055297F /* MegaProjectUML.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MegaProjectUML.pdf; sourceTree = "<group>"; };
+		1ECBE7B91E5CA4580055297F /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = Model/List.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +109,7 @@
 				1E409EE41E54B258007AD026 /* Timer.hpp */,
 				1E409EE21E54AD84007AD026 /* Array.hpp */,
 				1E7FB9341E5208E5002C60B8 /* Node.hpp */,
+				1ECBE7B91E5CA4580055297F /* List.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
