@@ -9,6 +9,7 @@
 #include "IntNodeArray.hpp"
 #include "StructureController.hpp"
 #include "../Model/Timer.hpp"
+#include "List.hpp"
 #include <iostream>
 
 using namespace std;
@@ -83,6 +84,17 @@ void StructureController :: testAdvancedFeatures()
     << copiedWords.getFromIndex(0) << endl;
     
     copiedWords.setAtIndex(3, "Changed the contents of the copied array");
+}
+
+void StructureController :: testListIntro()
+{
+    List<int> sample;
+    sample.addFront(2);
+    sample.addEnd(3);
+    sample.addFront(1);
+    cout << "This should, but probably won't go 1, 2, 3" << endl;
+    
+    for(int index = 0 )
 }
 
 void StructureController :: start()
