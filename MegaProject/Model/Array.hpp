@@ -58,7 +58,7 @@ Array<Type> :: ~Array()
     while(front != nullptr)
     {
         //Move to next node in array
-        front = front->getNodePointer();
+        front = front->getNextPointer();
         cout << "Moving to the next node. At: " << cout << endl;
         //Delete the front pointer
         delete remove;
@@ -78,7 +78,7 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     for(int index = 1; index < size; index++)
     {
         Node<Type> * temp = new Node<Type>();
-        temp->setNodePointer(front);
+        temp->setNextPointer(front);
         front = temp;
     }
     Node<Type> * copyTemp = toBeCopied.getFront();
@@ -86,8 +86,8 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     for(int index = 0; index < size; index++)
     {
         updated->setNodeData(copyTemp->getNodeData());
-        updated = updated->getNodePointer();
-        copyTemp = copyTemp->getNodePointer();
+        updated = updated->getNextPointer();
+        copyTemp = copyTemp->getNextPointer();
     }
 }
 template <class Type>
@@ -106,7 +106,7 @@ Array<Type> :: Array(int size)
     for(int index = 1; index < size; index++)
     {
         Node<Type> * currentNode = new Node <Type>();
-        currentNode->setNodePointer(front);
+        currentNode->setNextPointer(front);
         front = currentNode;
     }
 }
@@ -121,7 +121,7 @@ Type Array<Type> :: getFromIndex(int index)
     
     for(int position = 0; position < index; position++)
     {
-        current = current->getNodePointer()
+        current = current->getNextPointer()
     }
     
     value = current->getNodeData();
