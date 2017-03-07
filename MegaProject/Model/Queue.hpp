@@ -16,4 +16,117 @@ class Queue : public DoubleLinkedList<Type
 {
     
 };`
+
+/*
+ all this is doing is removing memory allocations
+ Same destructor as list, array, stack... since it is a linear data structure.
+ */
+
+template <class Type>
+Queue<Type> :: ~Queue()
+{
+    BiDirectionalNode<Type> * remove = this->getFront();
+    while(this->getFront() != nullptr)
+    {
+        this->setFront(this->getFront()->getNextPointer());
+        delete remove;
+        remove = this->getFront();
+    }
+}
+
+
+/*
+ Add to queue:
+ 1. Create Node
+ 2. If size == 0, adjust front to point to new node
+ 3. Else, add new node to ends next
+ 4. Move end to new node
+ 5. Adjust size + 1
+*/
+template <class Type>
+void Queue<Type> :: enqueue(Type insertedValue)
+{
+    BiDirectionalNode<Type> * added = new BiDirectionalNode<Type>(insertedValue);
+    
+    if(this->getSize() == 0 || this-> getFront() == nullptr || this->getEnd() == nullptr)
+    {
+        this-> setFront(added);
+    }
+    else
+    {
+        this->getEnd()->setNextPointer(added);
+        added->setPreviousPointer(this->getEnd());
+    }
+    this->setEnd(added);
+    this->setSize(this->getSize() + 1);
+}
+
+
+/*
+ 1. Assert size is valid.
+ 2. Get data from front node.
+ 3. If size == 1, set end to nullptr
+ 4. Else, move front to front next
+ 4a Set new fronts previous to nullptr
+ 5. Delete old front node
+ 6. Adjust size down by 1
+ 7. Return old value
+ if size == 1
+    adjust end to null
+ else
+    move front to next
+ get data from front
+ delete old front node
+ adjust size
+ return value
+ */
+template <class Type>
+type Queue<Type> :: dequeue()
+{
+    assert(this->getSize() > 0);
+    
+    Type removedValue = this->getFront()->getNodeData();
+    BiDirectionalNode<Type> * removeMe = this->getFront();
+    
+    if(this->getSize() == 1)
+    {
+        this->setEnd(nullptr);
+        this->setFront(nullptr);
+    }
+    else
+    {
+        this->setFront(removeMe->getNextPointer());
+    }
+    this->setFront()->setPreviousPointer(nullptr);
+    
+    delete removeMe;
+    this->setSize(this->getSize() - 1);
+    
+    return removedValue;
+
+/*
+ 1. Check that the size is greater than 0.
+ 2. Return the front objects data.
+ */
+template <class Type>
+Type Queue<Type> :: peek()
+{
+    assert(this->getSize() > 0);
+    
+    return this->getFront()->getNodeData();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #endif /* Queue_h */
