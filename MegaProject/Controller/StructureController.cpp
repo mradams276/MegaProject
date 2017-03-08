@@ -9,7 +9,7 @@
 #include "IntNodeArray.hpp"
 #include "StructureController.hpp"
 #include "../Model/Timer.hpp"
-#include "List.hpp"
+#include "List.h"
 #include <iostream>
 
 using namespace std;
