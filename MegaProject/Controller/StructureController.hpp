@@ -10,7 +10,7 @@
 #define StructureController_hpp
 
 #include "../Model/Node.hpp"
-#indlude "../Model/Array.hpp"
+#include "../Model/Array.hpp"
 #include <string>
 using namespace std;
 
@@ -24,8 +24,11 @@ private:
     void testIntArray();
     void testNodeTypes();
     void testArrayTemplate();
+    void testDestructor();
     void testAdvancedFeatures();
     void testListIntro();
+    void testDoubleLists();
+    void testListTiming();
 public:
     StructureController();
     void start();

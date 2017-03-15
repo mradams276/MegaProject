@@ -15,7 +15,7 @@ template <class Type>
 class Queue : public DoubleLinkedList<Type
 {
     
-};`
+};
 
 /*
  all this is doing is removing memory allocations

@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include "Node.hpp"
-
+template <class Type>
 class List
 {
 private:
@@ -32,7 +32,7 @@ public:
     void addEnd(Type value);
     Type getFromIndex(int index);
     Type remove(int index);
-    Tyoe setAtIndex(int index, Type value);
+    Type setAtIndex(int index, Type value);
     bool contains(Type value);
 };
 
@@ -49,9 +49,9 @@ void List<Type> :: addFront(Type value)
 {
     if(size == 0)
     {
-        Node<Type> * first = new Node<type>(value);
+        Node<Type> * first = new Node<Type>(value);
         this->front = first;
-        this->end = first
+        this->end = first;
     }
     else
     {
@@ -83,7 +83,8 @@ void List<Type> :: addEnd(Type data)
     size++;
 }
 
-template <class Type> :: addAtIndex(int index, Type value)
+template <class Type>
+void List<Type> :: addAtIndex(int index, Type value)
 {
     assert(index >= 0 && index <= size);
     if(index == 0)

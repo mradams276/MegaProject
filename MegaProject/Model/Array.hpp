@@ -9,9 +9,12 @@
 #ifndef Array_h
 #define Array_h
 
-#include ".hpp"
+
 #include "Node.hpp"
+#include <assert.h>
 #include <iostream>
+
+using namespace std;
 
 template <class Type>
 class Array
@@ -44,8 +47,7 @@ public:
 /*
  Creates an array of specified size by linking Node<Type> together.
  */
-template <class Type>
-Array<Type> :: Array()
+template <class Type>Array<Type> :: Array()
 {
     //Do not use!!!
 }
@@ -53,18 +55,20 @@ Array<Type> :: Array()
 template <class Type>
 Array<Type> :: ~Array()
 {
-    int cout = size;
+    int count = size;
     Node<Type> * remove = front;
     while(front != nullptr)
     {
         //Move to next node in array
         front = front->getNextPointer();
-        cout << "Moving to the next node. At: " << cout << endl;
+        cout << "Moving to the next node. At: " << count << endl;
         //Delete the front pointer
         delete remove;
         cout << "Moving to new front pointer." << endl;
+        remove = front;
+        cout << "moving to a new front pointer" << endl;
         count--;
-        cout << "Front is at: " << front << " count is: " << cout << endl;
+        cout << "Front is at: " << front << " count is: " << count << endl;
     }
 }
 
@@ -121,7 +125,7 @@ Type Array<Type> :: getFromIndex(int index)
     
     for(int position = 0; position < index; position++)
     {
-        current = current->getNextPointer()
+        current = current->getNextPointer();
     }
     
     value = current->getNodeData();
@@ -131,8 +135,8 @@ Type Array<Type> :: getFromIndex(int index)
 template <class Type>
 void Array<Type> :: setAtIndex(int index, Type Value)
 {
-    assert(index >= 0 && indes < size);
-    Node<Type> * current
+    assert(index >= 0 && index < size);
+    Node<Type> * current;
 }
 
 

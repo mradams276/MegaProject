@@ -12,9 +12,6 @@
 template <class Type>
 class Node
 {
-private:
-    Type nodeData:
-    Node<Type> * nextPointer;
 public:
     Node<Type>();
     Node<Type>(Type data);
@@ -24,6 +21,9 @@ public:
     Node<Type> * getNextPointer();
     void setNodeData(Type value);
     void setNextPointer(Node<Type> * nextPointer);
+private:
+    Type nodeData;
+    Node<Type> * changedPointer;
 };
 
 
@@ -34,7 +34,7 @@ Implementation section of the template class goes here
 template <class Type>
 Node<Type> :: Node()
 {
-    nextPointer = nullptr;
+    this->changedPointer = nullptr;
     //Not initializing node data because I dun know the type
 }
 
@@ -42,17 +42,17 @@ template <class Type>
 Node<Type> :: Node(Type data)
 {
     this->nodeData = data;
-    this->nextPointer = nullptr;
+    this->changedPointer = nullptr;
 }
 
 template <class Type>
 Node<Type> :: Node(Type value, Node<Type> * nextNode)
 {
     this->nodeData = value;
-    this->nextPointer = nextNode;
+    this->changedPointer = nextNode;
 }
 
-template <class type>
+template <class Type>
 Type Node<Type> :: getNodeData()
 {
     return nodeData;
@@ -61,7 +61,7 @@ Type Node<Type> :: getNodeData()
 template <class Type>
 Node<Type> * Node<Type> :: getNextPointer()
 {
-    return nextPointer;
+    return changedPointer;
 }
 
 template <class Type>
@@ -73,7 +73,7 @@ void Node<Type> :: setNodeData(Type data)
 template <class Type>
 void Node<Type> :: setNextPointer(Node<Type> * pointer)
 {
-    this->nextPointer = pointer;
+    this->changedPointer = pointer;
 }
 
 
