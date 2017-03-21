@@ -107,10 +107,34 @@ Type DoubleList<Type> :: remove(int index)
         return derp;
     }
 
+template <class Type>
+Type DoubleList<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < this->getSize());
+    Type valueAtIndex;
+    
+    BiDirectionalNode<Type> * refrence = this->getFront();
+    for(int position = 0; position < index; position++)
+    {
+        
+        refrence = refrence->getNextPointer();
+        
+    }
+    valueAtIndex = refrence->getNodeData();
+    
+    return valueAtIndex;
+}
 
 template <class Type>
-Type DoubleList<Type> :: getFromIndexFast(int index)
+void DoubleList<Type> :: addAtIndex(int index, Type value)
 {
-    assert(index >=)
+    
+}
+
+
+template <class Type>
+void DoubleList<Type> :: addAtIndexFast(int index, Type value)
+{
+    
 }
 #endif /* DoubleList_h */
