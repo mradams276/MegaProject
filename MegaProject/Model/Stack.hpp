@@ -8,6 +8,7 @@
 
 #ifndef Stack_h
 #define Stack_h
+#include "DoublyLinkedList.hpp"
 
 template <class Type>
 class Stack : DoublyLinkedList<Type>
@@ -25,6 +26,28 @@ public:
 
 //The add method only adds to the end on a stack.  Never at an index.
 
+template <class type>
+Stack<Type> :: Stack() : DoublyLinkedList<Type>()
+{
+    
+}
+
+/*
+ Goes through list and removes unneccissary items
+ */
+
+template <class Type>
+Stack<Type> :: ~Stack()
+{
+    BiDirectionalNode<Type> * remove = this->getFront();
+    while(this->getFront() != nullptr)
+    {
+        this->setFront(this->getFront()->getNextPointer());
+        delete remove;
+        remove = this->getFront();
+    }
+}
+
 template <class Type>
 void Stack<Type> :: add(Type valueToAdd)
 {
@@ -40,7 +63,7 @@ template <class Type>
 void Stack<Type> :: push(Type addedThing)
 {
     BiDirectionalNode<Type> * addToStack = new BiDirectionalNode
-        (addedThing);
+    (addedThing);
     
     if(this->size == 0 || this->front == nullptr || this->end == nullptr)
     {
@@ -53,6 +76,13 @@ void Stack<Type> :: push(Type addedThing)
     }
     this->front = addToStack;
     this->size++;}
+
+template <class Type>
+Type Stack<Type> :: peek()
+{
+    assert(this->getSize() > 0);
+    return this->getEnd()->getNodeData();
+}
 
 template <class Type>
 Type Stack<Type> :: pop()
