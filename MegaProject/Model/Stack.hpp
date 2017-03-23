@@ -75,7 +75,8 @@ void Stack<Type> :: push(Type addedThing)
         addToStack->setPreviousPointer(this->end);
     }
     this->front = addToStack;
-    this->size++;}
+    this->size++;
+}
 
 template <class Type>
 Type Stack<Type> :: peek()

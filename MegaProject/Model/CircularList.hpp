@@ -89,7 +89,13 @@ void CircularList<Type> :: add(Type data)
     }
     this->setSize(this->getSize() + 1);
 }
-
+/*
+ 1) Method is made, uses template
+ 2) Calls addMe to start the replacing proccess
+ 3) Checks to see if the list has any data already, if it doesn't it will add your new value to the front/head of the list
+ 4) If there is already a value in the front of the list, it will find the next pointer that doesn't have a value yet.  Then it will add the value there
+ 5) Adds one more to the size of the list
+ */
 template <class Type>
 Type CircularList<Type> :: remove(int index)
 {
@@ -129,6 +135,7 @@ Type CircularList<Type> :: remove(int index)
     
     return removedValue;
 }
+
 
 template <class Type>
 Type CircularList<Type> :: getFromIndex(int index)
