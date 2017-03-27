@@ -12,6 +12,7 @@
 		1EA742C41E4B69440045A813 /* StructureRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C31E4B69440045A813 /* StructureRunner.cpp */; };
 		1EA742C71E4B6AC80045A813 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C51E4B6AC80045A813 /* IntNode.cpp */; };
 		1EA742CB1E4B72530045A813 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C91E4B72530045A813 /* IntNodeArray.cpp */; };
+		1EE8A2841E8968E500E0D8F0 /* Meme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8A2821E8968E500E0D8F0 /* Meme.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,8 @@
 		1ED2BB7F1E69C93500DD928B /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
 		1ED2BB811E69C95600DD928B /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
 		1EE29E2E1E648D1C009A8611 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
+		1EE8A2821E8968E500E0D8F0 /* Meme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Meme.cpp; path = Model/Meme.cpp; sourceTree = "<group>"; };
+		1EE8A2831E8968E500E0D8F0 /* Meme.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Meme.hpp; path = Model/Meme.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 				1E1F87881E6729500021E52D /* DoublyLinkedList.hpp */,
 				1EE29E2E1E648D1C009A8611 /* BiDirectionalNode.hpp */,
 				1ED2BB821E69C96800DD928B /* Inherits From DoublyLinked */,
+				1EE8A2851E8968FB00E0D8F0 /* Items To Store */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -140,6 +144,15 @@
 				1ED2BB811E69C95600DD928B /* Queue.hpp */,
 			);
 			name = "Inherits From DoublyLinked";
+			sourceTree = "<group>";
+		};
+		1EE8A2851E8968FB00E0D8F0 /* Items To Store */ = {
+			isa = PBXGroup;
+			children = (
+				1EE8A2821E8968E500E0D8F0 /* Meme.cpp */,
+				1EE8A2831E8968E500E0D8F0 /* Meme.hpp */,
+			);
+			name = "Items To Store";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +215,7 @@
 				1EA742C71E4B6AC80045A813 /* IntNode.cpp in Sources */,
 				1EA742CB1E4B72530045A813 /* IntNodeArray.cpp in Sources */,
 				1EA742C21E4B692C0045A813 /* StructureController.cpp in Sources */,
+				1EE8A2841E8968E500E0D8F0 /* Meme.cpp in Sources */,
 				1E409EE51E54B258007AD026 /* Timer.cpp in Sources */,
 				1EA742C41E4B69440045A813 /* StructureRunner.cpp in Sources */,
 			);
