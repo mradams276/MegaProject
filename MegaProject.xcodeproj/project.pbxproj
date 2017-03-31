@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E21DF2A1E8E9F8B00D3F0DE /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E21DF281E8E9F8B00D3F0DE /* CrimeData.cpp */; };
 		1E409EE51E54B258007AD026 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E409EE31E54B258007AD026 /* Timer.cpp */; };
 		1EA742C21E4B692C0045A813 /* StructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C01E4B692C0045A813 /* StructureController.cpp */; };
 		1EA742C41E4B69440045A813 /* StructureRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C31E4B69440045A813 /* StructureRunner.cpp */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		1E1F87881E6729500021E52D /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		1E1F87891E672E920021E52D /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
+		1E21DF281E8E9F8B00D3F0DE /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = Model/CrimeData.cpp; sourceTree = "<group>"; };
+		1E21DF291E8E9F8B00D3F0DE /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = Model/CrimeData.hpp; sourceTree = "<group>"; };
 		1E409EE21E54AD84007AD026 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		1E409EE31E54B258007AD026 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
 		1E409EE41E54B258007AD026 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 			children = (
 				1EE8A2821E8968E500E0D8F0 /* Meme.cpp */,
 				1EE8A2831E8968E500E0D8F0 /* Meme.hpp */,
+				1E21DF281E8E9F8B00D3F0DE /* CrimeData.cpp */,
+				1E21DF291E8E9F8B00D3F0DE /* CrimeData.hpp */,
 			);
 			name = "Items To Store";
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			files = (
 				1EA742C71E4B6AC80045A813 /* IntNode.cpp in Sources */,
 				1EA742CB1E4B72530045A813 /* IntNodeArray.cpp in Sources */,
+				1E21DF2A1E8E9F8B00D3F0DE /* CrimeData.cpp in Sources */,
 				1EA742C21E4B692C0045A813 /* StructureController.cpp in Sources */,
 				1EE8A2841E8968E500E0D8F0 /* Meme.cpp in Sources */,
 				1E409EE51E54B258007AD026 /* Timer.cpp in Sources */,
