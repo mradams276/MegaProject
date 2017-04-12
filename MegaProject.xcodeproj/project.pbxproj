@@ -37,6 +37,11 @@
 		1E409EE31E54B258007AD026 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
 		1E409EE41E54B258007AD026 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 		1E7FB9341E5208E5002C60B8 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
+		1E9EE1861E9D1F7D003CFD25 /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryTreeNode.h; path = Model/BinaryTreeNode.h; sourceTree = "<group>"; };
+		1E9EE1881E9D2556003CFD25 /* BinarySearchTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BinarySearchTreeNode.h; path = Model/BinarySearchTreeNode.h; sourceTree = "<group>"; };
+		1E9EE1891E9D2579003CFD25 /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Tree.hpp; path = Model/Tree.hpp; sourceTree = "<group>"; };
+		1E9EE18B1E9D25AC003CFD25 /* BTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BTree.hpp; path = Model/BTree.hpp; sourceTree = "<group>"; };
+		1E9EE18D1E9D25DE003CFD25 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTree.hpp; path = Model/BinarySearchTree.hpp; sourceTree = "<group>"; };
 		1EA742B21E4B68BB0045A813 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA742C01E4B692C0045A813 /* StructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StructureController.cpp; path = Controller/StructureController.cpp; sourceTree = "<group>"; };
 		1EA742C11E4B692C0045A813 /* StructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StructureController.hpp; path = Controller/StructureController.hpp; sourceTree = "<group>"; };
@@ -75,6 +80,27 @@
 				1EA742C91E4B72530045A813 /* IntNodeArray.cpp */,
 			);
 			name = "Typed Data Samples";
+			sourceTree = "<group>";
+		};
+		1E9EE1851E9D1F14003CFD25 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1E7FB9341E5208E5002C60B8 /* Node.hpp */,
+				1EE29E2E1E648D1C009A8611 /* BiDirectionalNode.hpp */,
+				1E9EE1861E9D1F7D003CFD25 /* BinaryTreeNode.h */,
+				1E9EE1881E9D2556003CFD25 /* BinarySearchTreeNode.h */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		1E9EE18C1E9D25CD003CFD25 /* Trees */ = {
+			isa = PBXGroup;
+			children = (
+				1E9EE1891E9D2579003CFD25 /* Tree.hpp */,
+				1E9EE18D1E9D25DE003CFD25 /* BinarySearchTree.hpp */,
+				1E9EE18B1E9D25AC003CFD25 /* BTree.hpp */,
+			);
+			name = Trees;
 			sourceTree = "<group>";
 		};
 		1EA742A91E4B68BA0045A813 = {
@@ -116,16 +142,16 @@
 		1EA742C81E4B6AD30045A813 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1E409EE61E54B2C0007AD026 /* Typed Data Samples */,
+				1ED2BB821E69C96800DD928B /* Inherits From DoublyLinked */,
 				1E409EE31E54B258007AD026 /* Timer.cpp */,
 				1E409EE41E54B258007AD026 /* Timer.hpp */,
 				1E409EE21E54AD84007AD026 /* Array.hpp */,
-				1E7FB9341E5208E5002C60B8 /* Node.hpp */,
 				1ECBE7B91E5CA4580055297F /* List.h */,
 				1E1F87881E6729500021E52D /* DoublyLinkedList.hpp */,
-				1EE29E2E1E648D1C009A8611 /* BiDirectionalNode.hpp */,
-				1ED2BB821E69C96800DD928B /* Inherits From DoublyLinked */,
+				1E9EE1851E9D1F14003CFD25 /* Nodes */,
+				1E409EE61E54B2C0007AD026 /* Typed Data Samples */,
 				1EE8A2851E8968FB00E0D8F0 /* Items To Store */,
+				1E9EE18C1E9D25CD003CFD25 /* Trees */,
 			);
 			name = Model;
 			sourceTree = "<group>";
