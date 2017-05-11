@@ -22,6 +22,11 @@ private:
     void preOrderTraversal(BinarySearchTreeNode<Type> * preStart);
     void postOrderTraversal(BinarySearchTreeNode<Type> * postStart);
     
+    BinarySearchTreeNode<Type> * getRightMostChild(BinarySearchTreeNode<Type> * current);
+    BinarySearchTreeNode<Type> * getLeftMostChild(BinarySearchTreeNode<Type> * current);
+    
+    void removeNode(BinarySearchTreeNode<Type> * removeMe);
+    
 public:
     BinarySearchTree();
     ~BinarySearchTree();
@@ -32,6 +37,19 @@ public:
     void inOrderTraversal();
     void preOrderTraversal();
     void postOrderTraversal();
+    void demoTraversalSteps(BinarySearchTreeNode<Type> * node);
+    
+    int getSize();
+    int getHeight();
+    bool isComplete();
+    bool isBalanced();
+    
+    bool contains(Type value);
+    void insert(Type itemToInsert);
+    void remove(Type value);
+    
+    Type findMinimum();
+    Type findMaximum();
     
 };
 
@@ -70,6 +88,45 @@ void BinarySearchTree<Type> :: postOrderTraversal()
 {
     
 }
+template <class Type>
+BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getLeftMostChild(BinarySearchTreeNode<Type> * current)
+{
+    BinarySearchTreeNode<Type> * temp = current;
+    whild(temp->getLeftChild() != nullptr)
+    {
+        temp = temp->getLeftChild();
+    }
+    
+    return temp;
+}
+
+template <class Type>
+Type BinarySearchTreeNode<Type> :: findMinimum()
+{
+    assert(root != nullptr);
+    BinarySearchTreeNode<Type> * smallest = getLeftMostChild(root);
+    return smallest->getNodeData();
+}
+
+template <class Type>
+Type BinarySearchTreeNode<Type> :: findMaximum()
+{
+    assert(root != nullptr);
+    BinarySearchTreeNode<Type> * largest = getRightMostChild(root);
+    return largest->getNodeData();
+}
+
+template <class Type>
+BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getRightMostChild(BinarySearchTreeNode<Type> * current)
+{
+    BinarySearchTreeNode<Type> * temp = current;
+    while(temp->getRightChild() != nullptr)
+    {
+        temp = temp->getRightChild();
+    }
+    
+    return temp;
+}
 
 template <class Type>
 int BinarySearchTree<Type> :: calculateSize(BinarySearchTreeNode<Type> * start)
@@ -93,5 +150,21 @@ template <class Type>
 void BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTreeNode<Type> * postStart)
 {
     
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete(BinarySearchTreeNode<Type> * start, int index, int size)
+{
+    if(start == nullptr)
+    {
+        return true;
+    }
+    
+    if(index >= size)
+    {
+        return false;
+    }
+    
+    return (isComplete)
 }
 #endif /* BinarySearchTree_h */
