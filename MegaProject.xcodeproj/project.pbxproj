@@ -13,6 +13,7 @@
 		1EA742C41E4B69440045A813 /* StructureRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C31E4B69440045A813 /* StructureRunner.cpp */; };
 		1EA742C71E4B6AC80045A813 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C51E4B6AC80045A813 /* IntNode.cpp */; };
 		1EA742CB1E4B72530045A813 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EA742C91E4B72530045A813 /* IntNodeArray.cpp */; };
+		1EBC91CA1EDDAF9800D8D547 /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC91C81EDDAF9800D8D547 /* DataStructureController.cpp */; };
 		1EE8A2841E8968E500E0D8F0 /* Meme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8A2821E8968E500E0D8F0 /* Meme.cpp */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,10 @@
 		1EA742C61E4B6AC80045A813 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
 		1EA742C91E4B72530045A813 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		1EA742CA1E4B72530045A813 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
+		1EBC91C81EDDAF9800D8D547 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Controller/DataStructureController.cpp; sourceTree = "<group>"; };
+		1EBC91C91EDDAF9800D8D547 /* DataStructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataStructureController.hpp; path = Controller/DataStructureController.hpp; sourceTree = "<group>"; };
+		1EBC91CB1EDDB4CE00D8D547 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Graph.h; path = Model/Graph.h; sourceTree = "<group>"; };
+		1EBC91CC1EDDB64E00D8D547 /* HashNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HashNode.h; path = Model/HashNode.h; sourceTree = "<group>"; };
 		1EC13AF21E71C00D007ECB06 /* DoubleList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
 		1ECBE7B81E5C8E1E0055297F /* MegaProjectUML.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MegaProjectUML.pdf; sourceTree = "<group>"; };
 		1ECBE7B91E5CA4580055297F /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = Model/List.h; sourceTree = "<group>"; };
@@ -140,6 +145,8 @@
 				1EA742C01E4B692C0045A813 /* StructureController.cpp */,
 				1EA742C11E4B692C0045A813 /* StructureController.hpp */,
 				1EA742C31E4B69440045A813 /* StructureRunner.cpp */,
+				1EBC91C81EDDAF9800D8D547 /* DataStructureController.cpp */,
+				1EBC91C91EDDAF9800D8D547 /* DataStructureController.hpp */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 		1EA742C81E4B6AD30045A813 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1EBC91CB1EDDB4CE00D8D547 /* Graph.h */,
 				1E409EE31E54B258007AD026 /* Timer.cpp */,
 				1E409EE41E54B258007AD026 /* Timer.hpp */,
 				1E409EE21E54AD84007AD026 /* Array.hpp */,
@@ -185,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				1ED91F921EC4A8EA007EC631 /* HashTable.hpp */,
+				1EBC91CC1EDDB64E00D8D547 /* HashNode.h */,
 			);
 			name = "Non-Linear Structures";
 			sourceTree = "<group>";
@@ -260,6 +269,7 @@
 				1EA742C71E4B6AC80045A813 /* IntNode.cpp in Sources */,
 				1EA742CB1E4B72530045A813 /* IntNodeArray.cpp in Sources */,
 				1E21DF2A1E8E9F8B00D3F0DE /* CrimeData.cpp in Sources */,
+				1EBC91CA1EDDAF9800D8D547 /* DataStructureController.cpp in Sources */,
 				1EA742C21E4B692C0045A813 /* StructureController.cpp in Sources */,
 				1EE8A2841E8968E500E0D8F0 /* Meme.cpp in Sources */,
 				1E409EE51E54B258007AD026 /* Timer.cpp in Sources */,

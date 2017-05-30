@@ -6,26 +6,27 @@
 //  Copyright © 2017 Adams, Kyle. All rights reserved.
 //
 
+
 #ifndef IntNode_hpp
 #define IntNode_hpp
-
+#include <String>
+using namespace std;
 class IntNode
 {
 private:
     int nodeData;
     IntNode * nextPointer;
 public:
-    //Constructors
+    void start();
+    //constructors
     IntNode();
     IntNode(int value);
-    //Creates IntNode
+
     IntNode(int value, IntNode * nextNode);
-    //Methods
+    //methods
     int getNodeData();
     IntNode * getNextPointer();
-    
     void setNodeData(int value);
-    void setNextPointer(IntNode* updatedNode);
+    void setNextPointer(IntNode * nextNode);
 };
-
 #endif /* IntNode_hpp */
