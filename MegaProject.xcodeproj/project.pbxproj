@@ -61,7 +61,6 @@
 		1ECBE7B91E5CA4580055297F /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = Model/List.h; sourceTree = "<group>"; };
 		1ED2BB7F1E69C93500DD928B /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
 		1ED2BB811E69C95600DD928B /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
-		1ED91F911EC4A892007EC631 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Graph.hpp; path = MegaProject/Model/Graph.hpp; sourceTree = "<group>"; };
 		1ED91F921EC4A8EA007EC631 /* HashTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HashTable.hpp; path = Model/HashTable.hpp; sourceTree = "<group>"; };
 		1EE29E2E1E648D1C009A8611 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
 		1EE8A2821E8968E500E0D8F0 /* Meme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Meme.cpp; path = Model/Meme.cpp; sourceTree = "<group>"; };
@@ -115,7 +114,6 @@
 		1EA742A91E4B68BA0045A813 = {
 			isa = PBXGroup;
 			children = (
-				1ED91F911EC4A892007EC631 /* Graph.hpp */,
 				1EA742B41E4B68BB0045A813 /* MegaProject */,
 				1EA742B31E4B68BB0045A813 /* Products */,
 			);
