@@ -37,6 +37,7 @@
 		1E409EE21E54AD84007AD026 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		1E409EE31E54B258007AD026 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
 		1E409EE41E54B258007AD026 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
+		1E50F9ED1EE062F300AE756B /* MegaProjectUMLFinal.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MegaProjectUMLFinal.pdf; sourceTree = "<group>"; };
 		1E6953421EA7B1DD0012B44C /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AVLTree.hpp; path = Model/AVLTree.hpp; sourceTree = "<group>"; };
 		1E7FB9341E5208E5002C60B8 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		1E9EE1861E9D1F7D003CFD25 /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryTreeNode.h; path = Model/BinaryTreeNode.h; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		1EBC91CB1EDDB4CE00D8D547 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Graph.h; path = Model/Graph.h; sourceTree = "<group>"; };
 		1EBC91CC1EDDB64E00D8D547 /* HashNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HashNode.h; path = Model/HashNode.h; sourceTree = "<group>"; };
 		1EC13AF21E71C00D007ECB06 /* DoubleList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
-		1ECBE7B81E5C8E1E0055297F /* MegaProjectUML.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MegaProjectUML.pdf; sourceTree = "<group>"; };
 		1ECBE7B91E5CA4580055297F /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = Model/List.h; sourceTree = "<group>"; };
 		1ED2BB7F1E69C93500DD928B /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
 		1ED2BB811E69C95600DD928B /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		1ECBE7B71E5C8DF30055297F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1ECBE7B81E5C8E1E0055297F /* MegaProjectUML.pdf */,
+				1E50F9ED1EE062F300AE756B /* MegaProjectUMLFinal.pdf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
